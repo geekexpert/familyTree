@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Member from './components/Member';
+import { Family } from './FamilyTree';
 
-function App() {
+const App:React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {Family.map((data, key) => {
+          return (
+            <Member key={key} person={{id:data.id, name:data.name,gender:data.gender,children:data.children,parents:data.parents}} />
+          );
+        })}
+        <div className='log'>
+        <h2>Please kindly note:</h2>
+          <ul>
+            <li>This is my <strong>first TypeScript</strong> based React app.</li>
+            <li><strong>1 hour</strong>develop time.</li>
+            <li><strong>15 mins</strong> Online Tutorial Learning for Typescript.</li>
+            <span><a href="https://www.youtube.com/watch?v=Z5iWr6Srsj8&t=1087s">Tutorial</a></span>
+            <li>Despite outcome, Thank you for the oppurtunity.  </li>
+          </ul>
+        </div>
     </div>
   );
 }

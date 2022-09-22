@@ -1,0 +1,15 @@
+.Member {
+    position: relative;
+    border: 2px solid rgb(128 128 128 / 30%);
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    margin: 2px auto;
+}
+.Member img {
+    width: 25px;
+    position: absolute;
+    left: 0;
+    height: 25px;
+}
