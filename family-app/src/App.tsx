@@ -17,6 +17,7 @@ const App:React.FC = () => {
             <li>This is my <strong>first TypeScript</strong> based React app.</li>
             <li><strong>1 hour</strong>develop time.</li>
             <li><strong>15 mins</strong> Online Tutorial Learning for Typescript.</li>
+            <li>This is far I could go due to workload, time constraints.</li>
             <span><a href="https://www.youtube.com/watch?v=Z5iWr6Srsj8&t=1087s">Tutorial</a></span>
             <li>Despite outcome, Thank you for the oppurtunity.  </li>
           </ul>
